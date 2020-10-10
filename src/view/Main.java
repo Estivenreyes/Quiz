@@ -8,12 +8,15 @@ public class Main extends PApplet{
 		PApplet.main(Main.class.getName());
 	}
 	
+	String [] arrayTextFigure;
+	
 	public void settings() {
 		size(800,600);
 	}
 	
 	public void setup() {
-		
+		arrayTextFigure = loadStrings("../resources/figure.txt");
+		System.out.println(arrayTextFigure[0]);
 	}
 	
 	public void draw() {
